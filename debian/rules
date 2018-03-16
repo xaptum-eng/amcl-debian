@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --buildsystem=cmake --builddirectory=build --parallel
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	  -DAMCL_INCLUDE_SUBDIR=amcl \
+	  -DBUILD_BENCHMARKS=OFF \
+	  -DBUILD_DOCS=OFF \
+	  -DBUILD_EXAMPLES=OFF \
+	  -DBUILD_PYTHON=OFF \
+	  -DBUILD_TESTING=OFF
