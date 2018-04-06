@@ -2,8 +2,8 @@ Source: amcl
 Section: libs
 Priority: optional
 Maintainer: David R. Bild <david.bild@xaptum.com>
-Build-Depends: debhelper (>= 9), cmake (>= 3.1)
-Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 10), cmake (>= 3.1)
+Standards-Version: 3.9.8
 Homepage: https://github.com/milagro-crypto-c/milagro-crypto
 
 Package: libamcl4
