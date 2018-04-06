@@ -10,7 +10,7 @@ Package: libamcl4
 Section: libs
 Architecture: any
 Pre-Depends: multiarch-support
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Pre-Depends}
 Description: Apache Milagro Crypto Library (AMCL) is a standards
  compliant C cryptographic library with no external dependencies,
  specifically designed to support the Internet of Things (IoT).
@@ -20,7 +20,7 @@ Description: Apache Milagro Crypto Library (AMCL) is a standards
 Package: libamcl-dev
 Section: libdevel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, libamcl4 (= ${binary:Version})
 Description: Apache Milagro Crypto Library (AMCL) is a standards
  compliant C cryptographic library with no external dependencies,
  specifically designed to support the Internet of Things (IoT).
